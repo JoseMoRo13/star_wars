@@ -29,7 +29,7 @@ const ListItem = styled.li`
 `;
 
 const Planets = () => {
-  const { data: planets, loading, error } = useFetch('https://swapi.dev/api/planets/');
+  const { data: planets, loading, error } = useFetch('https://swapi.dev/api/people/');
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading data</p>;
@@ -38,8 +38,17 @@ const Planets = () => {
     <Container>
       <Title>Planets</Title>
       <List>
-        {planets.map(planet => (
-          <ListItem key={planet.name}>{planet.name}</ListItem>
+        {planets.map(planets => (
+          <ListItem>
+            <p>Nombre: {planets.name}</p>
+            <p>Altura: {planets.height}</p>
+            <p>Masa: {planets.mass}</p>
+            <p>Color de pelo: {planets.hair_color}</p>
+            <p>Color de piel: {planets.skin_color}</p>
+            <p>Color de ojos: {planets.eye_color}</p>
+            <p>Fecha de nacimineto: {planets.birth_year}</p>
+            <p>Genero: {planets.gender}</p>
+          </ListItem>
         ))}
       </List>
     </Container>
