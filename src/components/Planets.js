@@ -41,6 +41,13 @@ const Planets = () => {
         {planets.map(planet => (
           <ListItem>
             <p>Nombre: {planet.name}{planet.name}</p>
+            <p>Altura: {planet.height}{planet.height}</p>
+            <p>Masa: {planet.mass}{planet.mass}</p>
+            <p>Color de pelo: {planet.hair_color}{planet.hair_color}</p>
+            <p>Color de piel: {planet.skin_color}{planet.skin_color}</p>
+            <p>Color de ojos: {planet.eye_color}{planet.eye_color}</p>
+            <p>Cumpleaños: {planet.birth_year}{planet.birth_year}</p>
+            <p>Genero: {planet.gender}{planet.gender}</p>
           </ListItem>
         ))}
       </List>
