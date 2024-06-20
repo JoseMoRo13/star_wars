@@ -4,9 +4,8 @@ import useFetch from '../useFetch';
 
 const Container = styled.div`
   display: flex;
-  flex-direction:;
-  flex-wrap: wrap;
-  gap: 5px;
+  flex-direction: column;
+  align-items: center;
   margin: 20px;
 `;
 
@@ -17,16 +16,16 @@ const Title = styled.h1`
 
 const List = styled.ul`
   display: flex;
-  flex-direction:;
   flex-wrap: wrap;
+  gap: 5px;
   list-style: none;
   padding: 0;
 `;
 
 const ListItem = styled.li`
   display: flex;
-  flex-direction:;
   flex-wrap: wrap;
+  gap: 5px;
   background: #f4f4f4;
   padding: 10px;
   margin: 5px 0;
