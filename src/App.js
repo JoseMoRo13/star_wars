@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Planets from './components/Planets';
-import Spaceships from './components/Spaceships';
+import Starships from './components/Starships';
 import Vehicles from './components/Vehicles';
 import People from './components/People';
 import Films from './components/Films';
@@ -38,8 +38,8 @@ const App = () => {
     switch (view) {
       case 'planets':
         return <Planets />;
-      case 'spaceships':
-        return <Spaceships />;
+      case 'starships':
+        return <Starships />;
       case 'vehicles':
         return <Vehicles />;
       case 'people':
@@ -57,7 +57,7 @@ const App = () => {
     <Container>
       <Nav>
         <NavItem onClick={() => setView('planets')}>Planets</NavItem>
-        <NavItem onClick={() => setView('spaceships')}>Spaceships</NavItem>
+        <NavItem onClick={() => setView('starships')}>Spaceships</NavItem>
         <NavItem onClick={() => setView('vehicles')}>Vehicles</NavItem>
         <NavItem onClick={() => setView('people')}>People</NavItem>
         <NavItem onClick={() => setView('films')}>Films</NavItem>
