@@ -29,7 +29,7 @@ const ListItem = styled.li`
 `;
 
 const Films = () => {
-  const { data: filmss, loading, error } = useFetch('https://swapi.dev/api/films/');
+  const { data: films, loading, error } = useFetch('https://swapi.dev/api/films/');
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading data</p>;
@@ -38,8 +38,15 @@ const Films = () => {
     <Container>
       <Title>Films</Title>
       <List>
-        {planets.map(planet => (
-          <ListItem key={planet.name}>{planet.name}</ListItem>
+        {films.map(films => (
+          <ListItem>
+            <p>Titulo: {films.title}</p>
+            <p>Episodio: {films.episode_id}</p>
+            <p>Apertura: {films.opening_crawl}</p>
+            <p>Director: {films.director}</p>
+            <p>Productor: {films.producer}</p>
+            <p>Fecha de lanzamiento: {films.release_date}</p>
+          </ListItem>
         ))}
       </List>
     </Container>

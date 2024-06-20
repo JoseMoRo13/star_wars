@@ -28,22 +28,33 @@ const ListItem = styled.li`
   text-align: center;
 `;
 
-const Planets = () => {
-  const { data: planets, loading, error } = useFetch('https://swapi.dev/api/planets/');
+const Species = () => {
+  const { data: species, loading, error } = useFetch('https://swapi.dev/api/species/');
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading data</p>;
 
   return (
     <Container>
-      <Title>Planets</Title>
+      <Title>Species</Title>
       <List>
-        {planets.map(planet => (
-          <ListItem key={planet.name}>{planet.name}</ListItem>
+        {species.map(specie => (
+          <ListItem>
+            <p>Nombre: {specie.name}</p>
+            <p>Clasificación: {specie.classification}</p>
+            <p>Designacion: {specie.designation}</p>
+            <p>Altura media: {specie.average_height}</p>
+            <p>Color de piel: {specie.skin_colors}</p>
+            <p>Color de pelo: {specie.hair_colors}</p>
+            <p>Color de ojos: {specie.eye_colors}</p>
+            <p>Promedio de vida: {specie.average_lifespan}</p>
+            <p>Mundo natal: {specie.homeworld}</p>
+            <p>Lenguaje: {specie.language}</p>
+          </ListItem>
         ))}
       </List>
     </Container>
   );
 };
 
-export default Planets;
+export default Species;
