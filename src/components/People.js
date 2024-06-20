@@ -36,18 +36,18 @@ const People = () => {
 
   return (
     <Container>
-      <Title>Planets</Title>
+      <Title>People</Title>
       <List>
-        {planet.map(planet => (
+        {planet.map(people => (
           <ListItem>
-            <p>Nombre: {planet.name}</p>
-            <p>Altura: {planet.height}</p>
-            <p>Masa: {planet.mass}</p>
-            <p>Color de pelo: {planet.hair_color}</p>
-            <p>Color de piel: {planet.skin_color}</p>
-            <p>Color de ojos: {planet.eye_color}</p>
-            <p>Fecha de nacimineto: {planet.birth_year}</p>
-            <p>Genero: {planet.gender}</p>
+            <p>Nombre: {people.name}</p>
+            <p>Altura: {people.height}</p>
+            <p>Masa: {people.mass}</p>
+            <p>Color de pelo: {people.hair_color}</p>
+            <p>Color de piel: {people.skin_color}</p>
+            <p>Color de ojos: {people.eye_color}</p>
+            <p>Fecha de nacimineto: {people.birth_year}</p>
+            <p>Genero: {people.gender}</p>
           </ListItem>
         ))}
       </List>
