@@ -33,8 +33,8 @@ const ListItem = styled.li`
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
-  width: 250px;
-  text-align: center;
+  width: 150px;
+  text-align: left;
 `;
 
 const Planets = () => {
@@ -49,7 +49,7 @@ const Planets = () => {
       <List>
         {planets.map(planets => (
           <ListItem>
-            <p>Nombre: {planets.name}</p>
+            <p>{planets.name}</p>
             <p>Rotación: {planets.rotation_period}</p>
             <p>Periodo orbital: {planets.orbital_period}</p>
             <p>Diemetro: {planets.diameter}</p>

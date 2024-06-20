@@ -34,7 +34,7 @@ const ListItem = styled.li`
   margin: 5px 0;
   border-radius: 4px;
   width: 250px;
-  text-align: center;
+  text-align: left;
 `;
 
 const Species = () => {
