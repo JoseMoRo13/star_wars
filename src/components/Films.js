@@ -28,15 +28,15 @@ const ListItem = styled.li`
   text-align: center;
 `;
 
-const Planets = () => {
-  const { data: planets, loading, error } = useFetch('https://swapi.dev/api/planets/');
+const Films = () => {
+  const { data: filmss, loading, error } = useFetch('https://swapi.dev/api/films/');
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading data</p>;
 
   return (
     <Container>
-      <Title>Planets</Title>
+      <Title>Films</Title>
       <List>
         {planets.map(planet => (
           <ListItem key={planet.name}>{planet.name}</ListItem>
@@ -46,4 +46,4 @@ const Planets = () => {
   );
 };
 
-export default Planets;
+export default Films;

@@ -29,7 +29,7 @@ const ListItem = styled.li`
 `;
 
 const People = () => {
-  const { data: planet, loading, error } = useFetch('https://swapi.dev/api/people/');
+  const { data: people, loading, error } = useFetch('https://swapi.dev/api/people/');
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading data</p>;
@@ -38,7 +38,7 @@ const People = () => {
     <Container>
       <Title>People</Title>
       <List>
-        {planet.map(people => (
+        {people.map(people => (
           <ListItem>
             <p>Nombre: {people.name}</p>
             <p>Altura: {people.height}</p>
