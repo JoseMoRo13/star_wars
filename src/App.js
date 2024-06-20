@@ -57,7 +57,7 @@ const App = () => {
     <Container>
       <Nav>
         <NavItem onClick={() => setView('planets')}>Planets</NavItem>
-        <NavItem onClick={() => setView('starships')}>Spaceships</NavItem>
+        <NavItem onClick={() => setView('starships')}>Starships</NavItem>
         <NavItem onClick={() => setView('vehicles')}>Vehicles</NavItem>
         <NavItem onClick={() => setView('people')}>People</NavItem>
         <NavItem onClick={() => setView('films')}>Films</NavItem>

@@ -53,7 +53,6 @@ const Starships = () => {
             <p>Impulso: {starships.hyperdrive_rating}</p>
             <p>MGLT: {starships.MGLT}</p>
             <p>Clase de Nave: {starships.starship_class}</p>
-            <p>Pilotos: {starships.pilots}</p>
           </ListItem>
         ))}
       </List>
