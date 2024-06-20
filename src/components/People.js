@@ -28,7 +28,7 @@ const ListItem = styled.li`
   text-align: center;
 `;
 
-const Planet = () => {
+const People = () => {
   const { data: planet, loading, error } = useFetch('https://swapi.dev/api/people/');
 
   if (loading) return <p>Loading...</p>;
@@ -55,4 +55,4 @@ const Planet = () => {
   );
 };
 
-export default Planet;
+export default People;
