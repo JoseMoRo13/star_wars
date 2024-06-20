@@ -33,7 +33,7 @@ const ListItem = styled.li`
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
-  width: 300px;
+  width: 250px;
   text-align: center;
 `;
 
@@ -55,7 +55,7 @@ const People = () => {
             <p>Color de pelo: {people.hair_color}</p>
             <p>Color de piel: {people.skin_color}</p>
             <p>Color de ojos: {people.eye_color}</p>
-            <p>Fecha de nacimineto: {people.birth_year}</p>
+            <p>Nacimineto: {people.birth_year}</p>
             <p>Genero: {people.gender}</p>
           </ListItem>
         ))}

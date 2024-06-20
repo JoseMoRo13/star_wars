@@ -52,7 +52,7 @@ const App = () => {
       case 'species':
         return <Species />;
       default:
-        return <Species />;
+        return <Planets />;
     }
   };
 

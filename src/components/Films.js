@@ -33,7 +33,7 @@ const ListItem = styled.li`
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
-  width: 300px;
+  width: 250px;
   text-align: center;
 `;
 

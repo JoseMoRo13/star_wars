@@ -33,7 +33,7 @@ const ListItem = styled.li`
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
-  width: 300px;
+  width: 250px;
   text-align: center;
 `;
 
@@ -57,7 +57,6 @@ const Species = () => {
             <p>Color de pelo: {specie.hair_colors}</p>
             <p>Color de ojos: {specie.eye_colors}</p>
             <p>Promedio de vida: {specie.average_lifespan}</p>
-            <p>Mundo natal: {specie.homeworld}</p>
             <p>Lenguaje: {specie.language}</p>
           </ListItem>
         ))}
