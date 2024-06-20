@@ -4,8 +4,9 @@ import useFetch from '../useFetch';
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:;
+  flex-wrap: wrap;
+  gap: 5px;
   margin: 20px;
 `;
 

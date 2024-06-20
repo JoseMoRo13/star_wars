@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Nav = styled.nav`
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
