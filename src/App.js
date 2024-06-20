@@ -9,6 +9,7 @@ import Species from './components/Species';
 
 const Container = styled.div`
   text-align: center;
+  background: #181F24;
 `;
 
 const Nav = styled.nav`
@@ -28,7 +29,8 @@ const NavItem = styled.button`
   cursor: pointer;
   
   &:hover {
-    background: #555;
+    background: #F4E90D;
+    color: #181F24;
   }
 `;
 

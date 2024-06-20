@@ -11,16 +11,25 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-family: 'Arial', sans-serif;
-  color: #333;
+  font-size: 47px;
+  color: #F4E90D;
 `;
 
 const List = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   list-style: none;
   padding: 0;
+  color: #E7E5E7;
 `;
 
 const ListItem = styled.li`
-  background: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  background: #5F5F65;
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
