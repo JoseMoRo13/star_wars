@@ -47,14 +47,14 @@ const Films = () => {
     <Container>
       <Title>Films</Title>
       <List>
-        {films.map(films => (
+        {films.map(film => (
           <ListItem>
-            <p>Titulo: {films.title}</p>
-            <p>Episodio: {films.episode_id}</p>
-            <p>Apertura: {films.opening_crawl}</p>
-            <p>Director: {films.director}</p>
-            <p>Productor: {films.producer}</p>
-            <p>Fecha de lanzamiento: {films.release_date}</p>
+            <p>Titulo: {film.title}</p>
+            <p>Episodio: {film.episode_id}</p>
+            <p>Apertura: {film.opening_crawl}</p>
+            <p>Director: {film.director}</p>
+            <p>Productor: {film.producer}</p>
+            <p>Fecha de lanzamiento: {film.release_date}</p>
           </ListItem>
         ))}
       </List>
