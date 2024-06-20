@@ -12,6 +12,7 @@ const Container = styled.div`
 `;
 
 const Nav = styled.nav`
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -49,7 +50,7 @@ const App = () => {
       case 'species':
         return <Species />;
       default:
-        return <Planets />;
+        return <Species />;
     }
   };
 
