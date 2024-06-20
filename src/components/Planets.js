@@ -38,10 +38,10 @@ const Planets = () => {
     <Container>
       <Title>Planets</Title>
       <List>
-        {planets.map(planet => (
+        {planets.map(planets => (
           <ListItem>
             <p>Nombre: {planets.name}</p>
-            <p>Rotacion: {planets.rotation_period}</p>
+            <p>Rotación: {planets.rotation_period}</p>
             <p>Periodo orbital: {planets.orbital_period}</p>
             <p>Diemetro: {planets.diameter}</p>
             <p>Clima: {planets.climate}</p>
