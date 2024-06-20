@@ -38,7 +38,7 @@ const Starships = () => {
     <Container>
       <Title>Starships</Title>
       <List>
-        {planets.map(starships => (
+        {starships.map(starships => (
           <ListItem>
             <p>Nombre: {starships.name}</p>
             <p>MOdelo: {starships.model}</p>

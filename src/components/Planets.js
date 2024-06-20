@@ -40,15 +40,15 @@ const Planets = () => {
       <List>
         {planets.map(planet => (
           <ListItem>
-            <p>Nombre: {planet.name}</p>
-            <p>Rotacion: {planet.rotation_period}</p>
-            <p>Periodo orbital: {planet.orbital_period}</p>
-            <p>Diemetro: {planet.diameter}</p>
-            <p>Clima: {planet.climate}</p>
-            <p>Gravedad: {planet.gravity}</p>
-            <p>Terreno: {planet.terrain}</p>
-            <p>Superficie: {planet.surface_water}</p>
-            <p>Poblecion: {planet.population}</p>
+            <p>Nombre: {planets.name}</p>
+            <p>Rotacion: {planets.rotation_period}</p>
+            <p>Periodo orbital: {planets.orbital_period}</p>
+            <p>Diemetro: {planets.diameter}</p>
+            <p>Clima: {planets.climate}</p>
+            <p>Gravedad: {planets.gravity}</p>
+            <p>Terreno: {planets.terrain}</p>
+            <p>Superficie: {planets.surface_water}</p>
+            <p>Poblecion: {planets.population}</p>
           </ListItem>
         ))}
       </List>
